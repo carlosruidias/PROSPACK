@@ -1,11 +1,11 @@
-import About from './components/About';
-import Benefits from './components/Benefits';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Industries from './components/Industries';
-import Products from './components/Products';
-import QuoteForm from './components/QuoteForm';
+import About from './components/About.jsx';
+import Benefits from './components/Benefits.jsx';
+import Footer from './components/Footer.jsx';
+import Header from './components/Header.jsx';
+import Hero from './components/Hero.jsx';
+import Industries from './components/Industries.jsx';
+import Products from './components/Products.jsx';
+import QuoteForm from './components/QuoteForm.jsx';
 
 export default function App() {
   return (

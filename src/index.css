@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   font-family: 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif;
@@ -11,5 +9,6 @@ html {
 }
 
 body {
-  @apply text-slate-800 bg-slate-50;
+  color: #1e293b; /* slate-800 */
+  background-color: #f8fafc; /* slate-50 */
 }

@@ -19,7 +19,7 @@ export default function Hero() {
       />
       <div className="absolute inset-y-0 left-0 w-2/3 bg-gradient-to-r from-navy/100 via-navy/95 to-transparent" />
 
-      <div className="relative mx-auto px-4 pb-0 pt-10 text-white lg:px-20">
+      <div className="relative mx-auto max-w-7xl px-4 pb-0 pt-10 text-white lg:px-8">
         <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-slate-200">Soluciones inteligentes</p>
         <h1 className="max-w-2xl text-4xl font-black leading-tight md:text-6xl">
           PRODUCTOS PARA <span className="block text-orange">EL EMPAQUE</span>

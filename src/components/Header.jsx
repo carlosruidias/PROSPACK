@@ -17,13 +17,13 @@ export default function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex items-center justify-between px-4 py-3 lg:px-20">
+      <div className="mx-auto max-w-7xl flex items-center justify-between px-4 py-3 lg:px-8">
         <Link to="/" aria-label="Ir al inicio">
-          <img src="/images/logo.jpg" alt="Prospack" className="h-16 w-auto object-contain lg:h-20" />
+          <img src="/images/logo1.png" alt="Prospack" className="h-16 w-auto object-contain lg:h-20" />
         </Link>
 
-        <div className="flex gap-8">
-          <nav className="hidden items-center gap-8 lg:flex">
+        <div className="flex gap-4">
+          <nav className="hidden items-center gap-4 lg:flex">
             {links.map(({ label, path }) => {
               const isActive = location.pathname === path;
 
@@ -41,9 +41,9 @@ export default function Header() {
             })}
           </nav>
 
-          <div className="flex items-center gap-2">
-            <button className="hidden cursor-pointer items-center gap-2 rounded-xl bg-orange px-4 py-3 text-lg font-bold text-white shadow-soft transition hover:brightness-110 md:flex">
-              <MessageCircle size={28} />
+          <div className="flex items-center">
+            <button className="hidden cursor-pointer items-center gap-2 rounded-xl bg-orange px-4 py-3 font-bold text-white shadow-soft transition hover:brightness-110 md:flex">
+              <MessageCircle size={24} />
               COTIZAR AHORA
             </button>
 

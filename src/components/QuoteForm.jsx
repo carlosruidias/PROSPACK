@@ -3,8 +3,7 @@ import { Mail, MessageCircle, Send } from 'lucide-react';
 export default function QuoteForm() {
   return (
     <section className="relative bg-navy py-24 text-white">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-navy/0 via-white/10 to-transparent" />
-      <div className="mx-auto grid gap-10 px-4 lg:grid-cols-2 lg:px-20 xl:gap-14">
+      <div className="mx-auto max-w-7xl grid gap-10 px-4 lg:grid-cols-2 lg:px-8 xl:gap-14">
         <div className="self-center">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-slate-200">Cotizaciones</p>
           <h2 className="mt-3 text-4xl font-black leading-tight md:text-5xl">¿Necesitas una cotización?</h2>

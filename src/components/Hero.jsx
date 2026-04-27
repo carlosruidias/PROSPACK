@@ -36,12 +36,14 @@ export default function Hero() {
           </button>
         </div>
 
-        <div className="mt-12 grid gap-3 rounded-2xl bg-purple p-6 shadow-soft md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-12 mb-8 grid gap-3 rounded-2xl bg-purple p-6 shadow-soft md:grid-cols-2 xl:grid-cols-4">
           {items.map(({ title, text, icon: Icon }) => (
-            <article key={title} className="rounded-xl border border-white/10 bg-white/5 p-4 text-white">
-              <Icon className="mb-3 text-orange" size={22} />
-              <h3 className="text-lg font-bold">{title}</h3>
-              <p className="mt-2 text-sm text-slate-200">{text}</p>
+            <article key={title} className="flex rounded-xl border border-white/10 bg-white/5 p-4 text-white">
+              <Icon className="text-orange" size={22} />
+              <div>
+                <h3 className="text-lg font-bold">{title}</h3>
+                <p className="text-sm text-slate-200">{text}</p>
+              </div>
             </article>
           ))}
         </div>

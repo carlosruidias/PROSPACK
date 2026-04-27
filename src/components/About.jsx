@@ -22,13 +22,15 @@ export default function About() {
         <ul className="mt-6 space-y-3">
           {points.map((point) => (
             <li key={point} className="flex items-center gap-3 font-bold text-slate-700">
-              <CheckCircle2 size={24} className="text-white bg-purple rounded-full p-1 w-fit" />
+              <CheckCircle2 size={24} className="text-purple" />
               {point}
             </li>
           ))}
         </ul>
 
-        <button className="mt-8 rounded-xl bg-orange px-6 py-3 font-semibold text-white shadow-soft">Conoce más sobre nosotros</button>
+        <button className="mt-8 cursor-pointer rounded-xl bg-orange px-6 py-3 font-semibold text-white shadow-soft transition hover:brightness-110">
+          Conoce más sobre nosotros
+        </button>
       </div>
 
       <div className="overflow-hidden rounded-2xl shadow-soft">

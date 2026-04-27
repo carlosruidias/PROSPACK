@@ -1,15 +1,15 @@
 import { Menu, MessageCircle } from 'lucide-react';
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from 'react-router-dom';
 
 const links = [
-  { label: "Inicio", path: "/" },
-  { label: "Nosotros", path: "/nosotros" },
-  { label: "Catálogo", path: "/catalogo" },
-  { label: "Servicios", path: "/servicios" },
-  { label: "Cotizar", path: "/cotizar" },
-  { label: "Envíos", path: "/envios" },
-  { label: "Contacto", path: "/contacto" },
-  { label: "Familia", path: "/familia" },
+  { label: 'Inicio', path: '/' },
+  { label: 'Nosotros', path: '/nosotros' },
+  { label: 'Catálogo', path: '/catalogo' },
+  { label: 'Servicios', path: '/servicios' },
+  { label: 'Cotizar', path: '/cotizar' },
+  { label: 'Envíos', path: '/envios' },
+  { label: 'Contacto', path: '/contacto' },
+  { label: 'Familia', path: '/familia' },
 ];
 
 export default function Header() {
@@ -17,16 +17,14 @@ export default function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex items-center justify-between px-20 py-3">
-
-        <a href="/">
-          <img src="/images/logo.jpg" alt="Prospack" className="h-20 w-auto object-contain"/>
-        </a>
+      <div className="mx-auto flex items-center justify-between px-4 py-3 lg:px-20">
+        <Link to="/" aria-label="Ir al inicio">
+          <img src="/images/logo.jpg" alt="Prospack" className="h-16 w-auto object-contain lg:h-20" />
+        </Link>
 
         <div className="flex gap-8">
           <nav className="hidden items-center gap-8 lg:flex">
             {links.map(({ label, path }) => {
-              const location = useLocation();
               const isActive = location.pathname === path;
 
               return (
@@ -34,7 +32,7 @@ export default function Header() {
                   key={label}
                   to={path}
                   className={`text-lg font-semibold transition ${
-                    isActive ? "text-orange" : "text-slate-700 hover:text-orange"
+                    isActive ? 'text-orange' : 'text-slate-700 hover:text-orange'
                   }`}
                 >
                   {label}

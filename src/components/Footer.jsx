@@ -1,4 +1,15 @@
 import { Clock3, Facebook, Instagram, Mail, MapPin, MessageCircle, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
+const navLinks = [
+  { label: 'Inicio', path: '/' },
+  { label: 'Nosotros', path: '/nosotros' },
+  { label: 'Catálogo', path: '/catalogo' },
+  { label: 'Servicios', path: '/servicios' },
+  { label: 'Cotizar', path: '/cotizar' },
+  { label: 'Envíos', path: '/envios' },
+  { label: 'Contacto', path: '/contacto' },
+];
 
 export default function Footer() {
   return (
@@ -6,7 +17,9 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-14 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div>
           <img src="/images/logo.jpg" alt="Prospack" className="h-20 w-auto object-contain" />
-          <p className="mt-3 text-slate-200">Brindamos soluciones de empaque de alta calidad con compromiso e innovación responsable.</p>
+          <p className="mt-3 text-slate-200">
+            Brindamos soluciones de empaque de alta calidad con compromiso e innovación responsable.
+          </p>
           <div className="mt-5 flex w-full items-center justify-center gap-5">
             <a
               href="#"
@@ -37,9 +50,11 @@ export default function Footer() {
         <div className="lg:border-l lg:border-white/15 lg:pl-6">
           <h3 className="text-lg font-bold">Navegación</h3>
           <ul className="mt-3 space-y-2 text-slate-200">
-            {['Inicio', 'Nosotros', 'Catálogo', 'Servicios', 'Cotizar', 'Envíos', 'Contacto'].map((item) => (
-              <li key={item} className="cursor-pointer hover:text-orange">
-                {item}
+            {navLinks.map((item) => (
+              <li key={item.label}>
+                <Link to={item.path} className="transition hover:text-orange">
+                  {item.label}
+                </Link>
               </li>
             ))}
           </ul>
@@ -57,11 +72,21 @@ export default function Footer() {
         <div className="lg:border-l lg:border-white/15 lg:pl-6">
           <h3 className="text-lg font-bold">Contáctanos</h3>
           <ul className="mt-3 space-y-3 text-slate-200">
-            <li className="flex items-center gap-2"><MapPin size={16} className="text-orange" /> Lurigancho, Lima - Perú</li>
-            <li className="flex items-center gap-2"><Phone size={16} className="text-orange" /> +51 999 123 456</li>
-            <li className="flex items-center gap-2"><Mail size={16} className="text-orange" /> ventas1@prospack.com.pe</li>
-            <li className="flex items-center gap-2"><Clock3 size={16} className="text-orange" /> Lunes a Viernes: 8:00 am - 6:00 pm</li>
-            <li className="flex items-center gap-2"><Clock3 size={16} className="text-orange" /> Sábados: 8:00 am - 1:00 pm</li>
+            <li className="flex items-center gap-2">
+              <MapPin size={16} className="text-orange" /> Lurigancho, Lima - Perú
+            </li>
+            <li className="flex items-center gap-2">
+              <Phone size={16} className="text-orange" /> +51 999 123 456
+            </li>
+            <li className="flex items-center gap-2">
+              <Mail size={16} className="text-orange" /> ventas1@prospack.com.pe
+            </li>
+            <li className="flex items-center gap-2">
+              <Clock3 size={16} className="text-orange" /> Lunes a Viernes: 8:00 am - 6:00 pm
+            </li>
+            <li className="flex items-center gap-2">
+              <Clock3 size={16} className="text-orange" /> Sábados: 8:00 am - 1:00 pm
+            </li>
           </ul>
         </div>
       </div>

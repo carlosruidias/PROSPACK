@@ -14,15 +14,15 @@ export default function About() {
         <p className="text-sm font-bold uppercase tracking-[0.18em] text-purple">Nosotros</p>
         <h2 className="mt-3 text-4xl font-black text-navy">Comprometidos con la calidad</h2>
         <p className="mt-5 text-lg leading-relaxed text-slate-600">
-          En PROSPACK S.A.C. somos especialistas en productos para el empaque industrial. Diseñamos y fabricamos
+          En <b>PROSPACK S.A.C.</b> somos especialistas en productos para el empaque industrial. Diseñamos y fabricamos
           tubos de cartón, tucos industriales y soluciones personalizadas con enfoque en eficiencia, innovación y
           sostenibilidad.
         </p>
 
         <ul className="mt-6 space-y-3">
           {points.map((point) => (
-            <li key={point} className="flex items-center gap-3 font-medium text-slate-700">
-              <CheckCircle2 size={20} className="text-purple" />
+            <li key={point} className="flex items-center gap-3 font-bold text-slate-700">
+              <CheckCircle2 size={24} className="text-white bg-purple rounded-full p-1 w-fit" />
               {point}
             </li>
           ))}

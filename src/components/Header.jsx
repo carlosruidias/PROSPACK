@@ -7,10 +7,10 @@ export default function Header() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 lg:px-8">
         <div className="flex items-center gap-2">
-          <div className="h-10 w-10 rounded-lg bg-purple" />
           <div>
-            <p className="text-2xl font-black tracking-tight text-navy">PROSPACK</p>
-            <p className="text-[11px] font-semibold uppercase text-slate-500">Productos para el empaque</p>
+            <a href="/">
+              <img src="/images/logo.jpg" alt="Prospack" className="h-14 w-auto object-contain"/>
+            </a>
           </div>
         </div>
 

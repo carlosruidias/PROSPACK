@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@theme {
+  --color-navy: #131C5C;
+  --color-purple: #3F2A8A;
+  --color-orange: #F58A07;
+
+  --shadow-soft: 0 12px 40px -20px rgba(19, 28, 92, 0.35);
+}
+
 :root {
   font-family: 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif;
 }

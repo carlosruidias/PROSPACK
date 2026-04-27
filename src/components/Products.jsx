@@ -4,7 +4,7 @@ const products = [
   {
     title: 'Tubos de Cartón',
     description: 'Tubos resistentes y versátiles para las industrias textil, papelera, plástica y más.',
-    image: 'https://images.unsplash.com/photo-1604186838309-c6715f0d3c99?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/bg1.jpg',
     icon: Box,
   },
   {

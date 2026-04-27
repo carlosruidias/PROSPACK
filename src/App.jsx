@@ -4,7 +4,7 @@ import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 
 import Inicio from './pages/Inicio.jsx';
-import Nosotros from './pages/Nosotros.jsx';
+import AboutPage from './pages/AboutPage.jsx';
 import Catalogo from './pages/Catalogo.jsx';
 import Servicios from './pages/Servicios.jsx';
 import Cotizar from './pages/Cotizar.jsx';
@@ -21,7 +21,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/inicio" element={<Navigate to="/" replace />} />
-          <Route path="/nosotros" element={<Nosotros />} />
+          <Route path="/nosotros" element={<AboutPage />} />
           <Route path="/catalogo" element={<Catalogo />} />
           <Route path="/servicios" element={<Servicios />} />
           <Route path="/cotizar" element={<Cotizar />} />

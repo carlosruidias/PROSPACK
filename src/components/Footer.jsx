@@ -14,7 +14,7 @@ const navLinks = [
 export default function Footer() {
   return (
     <footer className="bg-navy text-white">
-      <div className="mx-auto grid max-w-7xl gap-8 px-4 py-14 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div>
           <img src="/images/logo1.png" alt="Prospack" className="brightness-0 invert h-20 w-auto object-contain" />
           <p className="mt-3 text-slate-200">

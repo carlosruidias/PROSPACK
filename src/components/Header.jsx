@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
-      <div className="mx-auto max-w-7xl flex items-center justify-between px-4 py-3 lg:px-8">
+      <div className="mx-auto max-w-7xl flex items-center justify-between px-8 py-3">
         <Link to="/" aria-label="Ir al inicio">
           <img src="/images/logo1.png" alt="Prospack" className="h-16 w-auto object-contain lg:h-20" />
         </Link>

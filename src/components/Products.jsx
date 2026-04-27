@@ -23,7 +23,7 @@ const products = [
 
 export default function Products() {
   return (
-    <section className="bg-slate-100 py-20">
+    <section className="py-12">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <p className="text-center text-sm font-bold uppercase tracking-[0.18em] text-purple">Nuestros productos</p>
         <h2 className="mt-3 text-center text-4xl font-black text-navy">Soluciones para cada necesidad</h2>

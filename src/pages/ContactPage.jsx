@@ -171,7 +171,7 @@ function ContactInfo() {
 
 function LocationSection() {
   return (
-    <section className="mt-8 grid gap-6 rounded-2xl bg-[#F8F9FC] p-6 shadow-lg lg:grid-cols-2 lg:p-8">
+    <section className="mt-8 grid gap-8 rounded-2xl bg-[#F8F9FC] p-6 shadow-lg lg:grid-cols-2 lg:p-8">
       <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
         <iframe
           title="Mapa PROSPACK"
@@ -221,7 +221,7 @@ function ValueSection() {
         {valueCards.map((card) => {
           const Icon = card.icon;
           return (
-            <article key={card.title} className="flex items-center gap-2">
+            <article key={card.title} className="flex items-center gap-2 xl:border-l xl:border-white/40 xl:pl-4 first:xl:border-l-0 first:xl:pl-0">
               <div className="inline-flex h-14 w-14 items-center justify-center text-orange">
                 <Icon />
               </div>
